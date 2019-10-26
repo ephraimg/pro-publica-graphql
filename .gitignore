@@ -1,0 +1,5 @@
+*.log
+.yarn-integrity
+.env
+.DS_Store
+node_modules
