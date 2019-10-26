@@ -1,12 +1,6 @@
 import { ApolloServer } from 'apollo-server-express';
-
-const typeDefs = `
-  type Query { hello: String! }
-`;
-
-const resolvers = {
-  Query: { hello: () => 'Hello world!' }
-};
+import { typeDefs } from './typedefs';
+import { resolvers } from './resolvers';
 
 export const apolloServer = new ApolloServer({
   typeDefs,
