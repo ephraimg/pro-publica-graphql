@@ -1,5 +1,4 @@
-const sessionNum = 116;
 const baseProPubUri = 'https://api.propublica.org/congress/v1';
 
-export const senateMembersUri = `${baseProPubUri}/${sessionNum}/senate/members.json`;
-export const houseMembersUri = `${baseProPubUri}/${sessionNum}/house/members.json`;
+export const senateMembersUri = session => `${baseProPubUri}/${session}/senate/members.json`;
+export const houseMembersUri = session => `${baseProPubUri}/${session}/house/members.json`;

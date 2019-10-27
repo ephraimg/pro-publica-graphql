@@ -1,3 +1,5 @@
+import { currentSession } from '~/src/utilities/constants';
+
 export const memberTypeDefs = `
   type Member {
     id: String!
@@ -19,7 +21,7 @@ export const memberTypeDefs = `
   }
 
   extend type Query {
-    senateMembers: MemberResults
-    houseMembers: MemberResults
+    senateMembers(session: Int = ${currentSession}): MemberResults
+    houseMembers(session: Int = ${currentSession}): MemberResults
   }
 `;
