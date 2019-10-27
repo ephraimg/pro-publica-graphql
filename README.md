@@ -13,11 +13,11 @@ After cloning the repo, get started with these steps:
 3. Run `yarn` to install dependencies
 4. Run `yarn start` to run the application
 5. In your browser, load `http://localhost:<PORT>/graphql` to view the GraphQL Playground (replace `<PORT>` with the port number you saved in your `.env` file)
-6. Use the Docs tab to browse through the schema, see what queries are available, and test it out! For example:
+6. Use the Docs tab to browse through the schema, see what queries are available, and test it out! For example, try the following query and query variable.
 
     ```
-    query {
-      senateMembers {
+    query($session: Int) {
+      senateMembers(session: $session) {
         congress
         members {
           first_name
@@ -25,6 +25,12 @@ After cloning the repo, get started with these steps:
           state
         }
       }
+    }
+    ```
+
+    ```
+    {
+      "session": 112
     }
     ```
 
