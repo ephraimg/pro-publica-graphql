@@ -1,14 +1,7 @@
-import { sharedTypeDefs } from './shared.typedefs';
-import { memberTypeDefs } from './member.typedefs';
-
-const Query = `
-  type Query {
-    _empty: String
-  }
-`;
+import { sharedTypeDefs } from './shared.typedefs.graphql';
+import { memberTypeDefs } from './member.typedefs.graphql';
 
 export const typeDefs = [
-  Query,
   sharedTypeDefs,
   memberTypeDefs
 ];
