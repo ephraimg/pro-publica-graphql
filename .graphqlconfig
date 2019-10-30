@@ -1,4 +1,4 @@
 {
-  "schema": "http://localhost:4000/graphql",
+  "schemaPath": "src/graphql/typedefs/schema.graphql",
   "includes": ["**/*.graphql"]
 }

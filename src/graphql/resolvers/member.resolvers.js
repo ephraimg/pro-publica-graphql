@@ -13,3 +13,8 @@ export const memberResolvers = {
     return results[0];
   }
 };
+
+export const memberFieldResolvers = {
+  Member: {
+  }
+}

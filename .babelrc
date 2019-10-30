@@ -10,7 +10,6 @@
     ]
   ],
   "plugins": [
-    ["babel-plugin-root-import"],
-    ["import-graphql"]
+    ["babel-plugin-root-import"]
   ]
 }

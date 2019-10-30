@@ -18,7 +18,7 @@ type MemberResults {
   members: [Member]!
 }
 
-extend type Query {
+type Query {
   senateMembers(session: Int): MemberResults
   houseMembers(session: Int): MemberResults
 }

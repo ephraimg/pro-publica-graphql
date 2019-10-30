@@ -4,21 +4,20 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "rm -rf ./node_modules/.cache/babel-loader && NODE_ENV=development nodemon src/index.js --exec babel-node"
+    "start": "NODE_ENV=development nodemon src/index.js --exec babel-node"
   },
   "dependencies": {
     "apollo-server-express": "^2.9.7",
     "axios": "^0.19.0",
     "dotenv": "^8.2.0",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "graphql-import": "^0.7.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.6.4",
     "@babel/core": "^7.6.4",
     "@babel/node": "^7.6.3",
     "@babel/preset-env": "^7.6.3",
-    "@babel/register": "^7.6.2",
-    "babel-plugin-import-graphql": "^2.7.0",
     "babel-plugin-root-import": "^6.4.1"
   }
 }

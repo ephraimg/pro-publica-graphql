@@ -1,7 +1,6 @@
-import { sharedTypeDefs } from './shared.typedefs.graphql';
-import { memberTypeDefs } from './member.typedefs.graphql';
+import { importSchema } from 'graphql-import';
 
-export const typeDefs = [
-  sharedTypeDefs,
-  memberTypeDefs
-];
+/* Warning: Must use an absolute path for importSchema */
+export const typeDefs = importSchema('src/graphql/typedefs/schema.graphql');
+
+// console.log(typeDefs);

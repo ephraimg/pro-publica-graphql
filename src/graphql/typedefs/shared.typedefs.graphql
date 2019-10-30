@@ -1,7 +1,3 @@
-type Query {
-  _empty: String
-}
-
 enum Chamber {
   House
   Senate

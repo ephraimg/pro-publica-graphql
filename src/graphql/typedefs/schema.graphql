@@ -1,0 +1,6 @@
+# import * from './shared.typedefs.graphql'
+# import Query.* from '/member.typedefs.graphql'
+
+type Query {
+  _empty: String
+}
