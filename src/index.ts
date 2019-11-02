@@ -1,7 +1,7 @@
-import { env } from '~/src/utilities/env';
-import express from 'express';
-import { memberRouter } from '~/src/express/member-router';
-import { apolloServer } from '~/src/graphql/graphql-server';
+import { env } from './utilities/env';
+import * as express from 'express';
+import { memberRouter } from './express/member-router';
+import { apolloServer } from './graphql/graphql-server';
 
 const { PORT } = env;
 const app = express();

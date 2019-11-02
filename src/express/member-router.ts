@@ -1,7 +1,7 @@
-import express from 'express';
-import { callProPub } from '~/src/utilities/http';
-import { senateMembersUri, houseMembersUri } from '~/src/utilities/uris';
-import { currentSession } from '~/src/utilities/constants';
+import * as express from 'express';
+import { callProPub } from '../utilities/http';
+import { senateMembersUri, houseMembersUri } from '../utilities/uris';
+import { currentSession } from '../utilities/constants';
 
 const memberRouter = express.Router();
 

@@ -1,5 +1,5 @@
-import { callProPub } from '~/src/utilities/http';
-import { senateMembersUri, houseMembersUri } from '~/src/utilities/uris';
+import { callProPub } from '../../utilities/http';
+import { senateMembersUri, houseMembersUri } from '../../utilities/uris';
 
 export const memberResolvers = {
   senateMembers: async (root, { session }) => {
