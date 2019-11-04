@@ -1,3 +1,3 @@
 import 'dotenv/config';
 
-export const env = process.env;
+export const env: {[key: string]: string} = process.env;

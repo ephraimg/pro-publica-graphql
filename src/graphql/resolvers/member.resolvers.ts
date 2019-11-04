@@ -1,7 +1,8 @@
 import { callProPub } from '../../utilities/http';
 import { senateMembersUri, houseMembersUri } from '../../utilities/uris';
+import { QueryResolvers } from '../../generated-types';
 
-export const memberResolvers = {
+export const memberResolvers: QueryResolvers = {
   senateMembers: async (root, { session }) => {
     const results = await callProPub({ url: senateMembersUri(session) });
     // results: [{ congress: 116 ... }]
@@ -17,4 +18,4 @@ export const memberResolvers = {
 export const memberFieldResolvers = {
   Member: {
   }
-}
+};

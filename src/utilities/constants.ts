@@ -1,1 +1,1 @@
-export const currentSession = 116;
+export const currentSession: number = 116;

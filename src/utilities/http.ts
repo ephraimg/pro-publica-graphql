@@ -1,9 +1,11 @@
 import { env } from './env';
-import axios from 'axios';
+import axios, { AxiosRequestConfig } from 'axios';
 
 const { PRO_PUB_KEY } = env;
 
-const addProPubKey = config => {
+const addProPubKey = (
+  config: AxiosRequestConfig
+): AxiosRequestConfig => {
   const headers = config.headers || {};
   const headersWithKey = {
     ...headers,
@@ -15,7 +17,9 @@ const addProPubKey = config => {
   };
 }
 
-export const callProPub = async config => {
+export const callProPub = async (
+  config: AxiosRequestConfig
+): Promise<any> => {
   const configWithKey = addProPubKey(config);
   try {
     const resp = await axios(configWithKey);

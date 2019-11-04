@@ -4,7 +4,7 @@ import { memberRouter } from './express/member-router';
 import { apolloServer } from './graphql/graphql-server';
 
 const { PORT } = env;
-const app = express();
+const app: express.Application = express();
 
 app.use(memberRouter);
 

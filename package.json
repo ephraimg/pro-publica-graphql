@@ -21,6 +21,8 @@
     "@graphql-codegen/typescript": "1.8.2",
     "@graphql-codegen/typescript-document-nodes": "1.8.2",
     "@graphql-codegen/typescript-resolvers": "1.8.2",
+    "@types/express": "^4.17.2",
+    "@types/node": "^12.12.5",
     "nodemon": "^1.19.4",
     "typescript": "^3.6.4"
   }
