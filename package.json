@@ -13,7 +13,7 @@
     "apollo-server-express": "^2.9.7",
     "axios": "^0.19.0",
     "dotenv": "^8.2.0",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "graphql-import": "^0.7.1"
   },
   "devDependencies": {
